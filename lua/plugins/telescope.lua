@@ -18,6 +18,7 @@ return {
             "**/fastlane",
             "/ios/Pods",
             "/vendor/bundle",
+            "target",
           },
         },
       })

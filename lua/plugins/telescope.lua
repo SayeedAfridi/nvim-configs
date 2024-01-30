@@ -5,9 +5,20 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       require("telescope").setup({
-        file_ignore_patterns = {
-          "node_modules",
-          "build",
+        defaults = {
+          file_ignore_patterns = {
+            "node_modules",
+            "build",
+            "xcuserdata",
+            "DerivedData",
+            "*.xcuserstate",
+            ".idea",
+            ".gradle",
+            ".cxx",
+            "**/fastlane",
+            "/ios/Pods",
+            "/vendor/bundle",
+          },
         },
       })
       local builtin = require("telescope.builtin")
